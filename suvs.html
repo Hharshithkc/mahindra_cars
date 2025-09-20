@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    background-color: black;
+  }
+
+  #main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   }
+  #box1
+  {
+    height: 120px;
+    border-radius: 10px;
+    border:2px solid white;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+  }
+  #logo
+  {
+    width: 100px;
+    margin-left:300px;
+  }
+
+  #h1
+  {
+    color: white;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 400px;
+  }
+   #box2
+   {
+    display: flex;
+    width: 80%;
+    margin-top: 100px;
+    justify-content:space-evenly;
+    flex-direction:column;
+    background-color:black;
+    height:auto;
+    align-items: center;
+   }
+   .c1
+   {
+    margin-top: 59px;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    transition: 0.9s;
+   }
+   .c1:hover
+   {
+    height:240px;
+    border:2px solid white;
+    border-radius: 10px;
+   }
+   #text1
+   {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   #imgs
+   {
+    width: 320px;
+    height: auto;
+   }
+   .c1 button
+    {
+     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s, transform 0.5s;
+    }
+    .c1:hover button
+    {
+        opacity: 1;
+        transform: translateY(0);
+        height: 80px;
+        width: 200px;
+        border-radius: 10px;
+        color: white;
+        font-size: 25px;
+        border: 2px solid white;
+        text-transform: capitalize;
+        background-color: black;
+    }
+
+@media(min-width:300px) and (max-width:400px)
+{
+  *{
+    background-color:black;
+  }
+
+  #main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 150px;
+   }
+  #box1
+  {
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid white;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+  }
+  #logo
+  {
+    width: 50px;
+    margin-left:100px;
+  }
+
+  #h1
+  {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 40px;
+  }
+   #box2
+   {
+    display: flex;
+    width: 95%;
+    margin-top: 50px;
+    justify-content:space-evenly;
+    flex-direction:column;
+    background-color:black;
+    height:auto;
+    align-items: center;
+   }
+   .c1
+   {
+    margin-top:40px;
+    height: 150px;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    transition: 0.9s;
+   }
+   .c1:hover
+   {
+    height:140px;
+    border:2px solid white;
+    border-radius: 10px;
+   }
+   #text1
+   {
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   #imgs
+   {
+    width: 130px;
+    height: auto;
+    border-radius: 5px;
+   }
+   .c1 button
+    {
+     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s, transform 0.5s;
+    }
+    .c1:hover button
+    {
+        opacity: 1;
+        transform: translateY(0);
+        height: 50px;
+        width: 80px;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        border: 2px solid white;
+        text-transform: capitalize;
+        background-color: black;
+    }
+
+}
+
+@media(min-width:401px) and (max-width:500px)
+{
+  *{
+    background-color:black;
+  }
+
+  #main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 150px;
+   }
+  #box1
+  {
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid white;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+  }
+  #logo
+  {
+    width: 50px;
+    margin-left:100px;
+  }
+
+  #h1
+  {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 40px;
+  }
+   #box2
+   {
+    display: flex;
+    width: 95%;
+    margin-top: 50px;
+    justify-content:space-evenly;
+    flex-direction:column;
+    background-color:black;
+    height:auto;
+    align-items: center;
+   }
+   .c1
+   {
+    margin-top:40px;
+    height: 150px;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    transition: 0.9s;
+   }
+   .c1:hover
+   {
+    height:140px;
+    border:2px solid white;
+    border-radius: 10px;
+   }
+   #text1
+   {
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   #imgs
+   {
+    width: 140px;
+    height: auto;
+    border-radius: 5px;
+   }
+   .c1 button
+    {
+     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s, transform 0.5s;
+    }
+    .c1:hover button
+    {
+        opacity: 1;
+        transform: translateY(0);
+        height: 50px;
+        width: 80px;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        border: 2px solid white;
+        text-transform: capitalize;
+        background-color: black;
+    }
+
+}
+@media(min-width:501px) and (max-width:700px)
+{
+  *{
+    background-color:black;
+  }
+
+  #main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 150px;
+   }
+  #box1
+  {
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid white;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+  }
+  #logo
+  {
+    width: 50px;
+    margin-left:100px;
+  }
+
+  #h1
+  {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 40px;
+  }
+   #box2
+   {
+    display: flex;
+    width: 95%;
+    margin-top: 50px;
+    justify-content:space-evenly;
+    flex-direction:column;
+    background-color:black;
+    height:auto;
+    align-items: center;
+   }
+   .c1
+   {
+    margin-top:40px;
+    height: 150px;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    transition: 0.9s;
+   }
+   .c1:hover
+   {
+    height:140px;
+    border:2px solid white;
+    border-radius: 10px;
+   }
+   #text1
+   {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   #imgs
+   {
+    width: 170px;
+    height: auto;
+    border-radius: 5px;
+   }
+   .c1 button
+    {
+     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s, transform 0.5s;
+    }
+    .c1:hover button
+    {
+        opacity: 1;
+        transform: translateY(0);
+        height: 50px;
+        width: 80px;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        border: 2px solid white;
+        text-transform: capitalize;
+        background-color: black;
+    }
+
+}
+@media(min-width:701px) and (max-width:900px)
+{
+  *{
+    background-color:black;
+  }
+
+  #main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 150px;
+   }
+  #box1
+  {
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid white;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+  }
+  #logo
+  {
+    width: 50px;
+    margin-left:100px;
+  }
+
+  #h1
+  {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 40px;
+  }
+   #box2
+   {
+    display: flex;
+    width: 95%;
+    margin-top: 50px;
+    justify-content:space-evenly;
+    flex-direction:column;
+    background-color:black;
+    height:auto;
+    align-items: center;
+   }
+   .c1
+   {
+    margin-top:40px;
+    height: 150px;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    transition: 0.9s;
+   }
+   .c1:hover
+   {
+    height:140px;
+    border:2px solid white;
+    border-radius: 10px;
+   }
+   #text1
+   {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   #imgs
+   {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+   }
+   .c1 button
+    {
+     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s, transform 0.5s;
+    }
+    .c1:hover button
+    {
+        opacity: 1;
+        transform: translateY(0);
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        border: 2px solid white;
+        text-transform: capitalize;
+        background-color: black;
+    }
+
+}
+
+   
+</style>
+
+<body>
+
+<div id="main">
+
+<div id="box1">
+<img id="logo" src="https://th.bing.com/th?q=Mahindra+Twin+Peaks+Logo&w=120&h=120&c=1&rs=1&qlt=90&r=0&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247">
+<p id="h1">SUV's</p>
+</div>
+
+<div id="box2">
+<div class="c1">
+    <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwa4de1cb1/images/TH5D/large/Thar_Roxx_602x339.png?sw=360&sh=202">
+    <p id="text1">thar roxx<br>₹12.99L - ₹23.39L</p>
+    <button id="btn">explore  >></button>
+</div>
+
+<div class="c1">
+   <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwc4930484/images/X3XO/large/S220_602x339.png?sw=360&sh=202">
+    <p id="text1">xuv 3XO<br>₹7.99L - ₹15.39L</p>
+    <button id="btn">explore  >></button> 
+</div>
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw14737114/images/SCN/large/ScorpioN_602x339.png?sw=360&sh=202">
+    <p id="text1">Scorpio-N<br>₹7.99L - ₹15.39L</p>
+    <button id="btn">explore  >></button>
+</div>
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwf4065a44/images/X700/XUV-700-New-Images/large/AX7L/Default_Midnight_Black_633x229.png?sw=360&sh=202">
+    <p id="text1">XUV 700<br>₹14.59L - ₹25.19L</p>
+    <button id="btn">explore  >></button>
+</div>
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw5fe5df52/images/THRN/large/Thar_602x339.png?sw=360&sh=202">
+    <p id="text1">thar<br>₹14.99L - ₹26.30</p>
+    <button id="btn">explore  >></button>
+</div>
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw95797f68/images/SCRC/large/ScorpioClassic_602x339.png?sw=360&sh=202">
+    <p id="text1">scorpio-classic<br>₹13.99L - ₹17.70</p>
+    <button id="btn">explore  >></button>
+</div>
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwd95af4c4/images/NEO/large/BoleroNeo_602x339.png?sw=360&sh=202">
+    <p id="text1">bolero-neo<br>₹9.99L - ₹12.18</p>
+    <button id="btn">explore  >></button>
+</div>
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwc6625064/images/NEOP/large/BoleroNeoPlus_602x339.png?sw=360&sh=202">
+    <p id="text1">bolero-neo-plus<br>₹11.41L - ₹14.70</p>
+    <button id="btn">explore  >></button>
+</div>
+
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwd849e4b1/images/BOL/large/Bolero_602x339.png?sw=360&sh=202">
+    <p id="text1">bolero<br>₹9.18L - ₹10.93</p>
+    <button id="btn">explore  >></button>
+</div>
+
+
+
+<div class="c1">
+      <img id="imgs"src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dweb7ab251/images/X400/large/XUV400_602x339.png?sw=360&sh=202">
+    <p id="text1">xuv400<br>₹13.41L - ₹17.70</p>
+    <button id="btn">explore  >></button>
+</div>
+
+
+
+</div>
+    
+
+
+</div>
+</body>
+</html>
